@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>867427248951-84dd9bba4g8te70oa2t4fbh2gft6e46q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.867427248951-84dd9bba4g8te70oa2t4fbh2gft6e46q</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>867427248951-4ri3l4mr9qjnld54hlrj256a4tbodrdt.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDAMh7RhF8mamhGLSeZT6lrBTX0zTGntVI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>867427248951</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>nsg.datingapp.ios</string>
+	<key>PROJECT_ID</key>
+	<string>datingapp-d03ac</string>
+	<key>STORAGE_BUCKET</key>
+	<string>datingapp-d03ac.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:867427248951:ios:ba143d86e203bfc18e88b2</string>
+	<key>DATABASE_URL</key>
+	<string>https://datingapp-d03ac.firebaseio.com</string>
+</dict>
+</plist>

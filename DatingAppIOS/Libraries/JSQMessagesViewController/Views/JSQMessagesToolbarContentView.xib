@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="JSQMessagesToolbarContentView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatting_box_back" translatesAutoresizingMaskIntoConstraints="NO" id="zf4-mH-AME">
+                    <rect key="frame" x="59" y="5" width="330" height="34"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEq-G7-jGt" userLabel="Left button container">
+                    <rect key="frame" x="15" y="6" width="34" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="0WW-wj-4ce"/>
+                        <constraint firstAttribute="height" constant="32" id="Gnv-yp-uZg"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dm4-NT-mvr" customClass="JSQMessagesComposerTextView">
+                    <rect key="frame" x="74" y="7" width="265" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4Jr-kU-jyT"/>
+                        <constraint firstAttribute="width" constant="265" id="Ouc-3J-Hag"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Myo-1S-Vg1" userLabel="Right button container">
+                    <rect key="frame" x="339" y="5" width="50" height="34"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="6QB-jV-4Fv"/>
+                        <constraint firstAttribute="height" constant="34" id="sKw-MC-CU5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LEq-G7-jGt" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="BBd-rQ-F2h"/>
+                <constraint firstAttribute="bottom" secondItem="dm4-NT-mvr" secondAttribute="bottom" constant="7" id="CRy-Hd-IrF"/>
+                <constraint firstItem="zf4-mH-AME" firstAttribute="top" secondItem="dm4-NT-mvr" secondAttribute="top" constant="-2" id="QVC-4g-7AH"/>
+                <constraint firstAttribute="trailing" secondItem="zf4-mH-AME" secondAttribute="trailing" constant="25" id="Tv1-Z3-uFH"/>
+                <constraint firstItem="Myo-1S-Vg1" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="UdP-cW-ZoC"/>
+                <constraint firstAttribute="trailing" secondItem="dm4-NT-mvr" secondAttribute="trailing" constant="75" id="ZVG-5V-lWE"/>
+                <constraint firstItem="Myo-1S-Vg1" firstAttribute="leading" secondItem="dm4-NT-mvr" secondAttribute="trailing" id="a9A-MC-ayy"/>
+                <constraint firstItem="zf4-mH-AME" firstAttribute="bottom" secondItem="dm4-NT-mvr" secondAttribute="bottom" constant="2" id="h7w-u6-NmA"/>
+                <constraint firstItem="LEq-G7-jGt" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="15" id="jlq-ak-3gt"/>
+                <constraint firstItem="dm4-NT-mvr" firstAttribute="top" secondItem="1" secondAttribute="top" constant="7" id="wlA-o9-ckI"/>
+                <constraint firstItem="dm4-NT-mvr" firstAttribute="leading" secondItem="LEq-G7-jGt" secondAttribute="trailing" constant="25" id="xKl-h0-wqj"/>
+                <constraint firstItem="zf4-mH-AME" firstAttribute="leading" secondItem="LEq-G7-jGt" secondAttribute="trailing" constant="10" id="xzc-VJ-Fac"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftBarButtonContainerView" destination="LEq-G7-jGt" id="F0V-4N-1Mo"/>
+                <outlet property="rightBarButtonContainerView" destination="Myo-1S-Vg1" id="0SR-cw-EkD"/>
+                <outlet property="textView" destination="dm4-NT-mvr" id="PFw-HO-oT8"/>
+            </connections>
+            <point key="canvasLocation" x="672" y="318"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chatting_box_back" width="275" height="32"/>
+    </resources>
+</document>

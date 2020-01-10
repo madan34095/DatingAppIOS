@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ScreenshotReportViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="岡本拓がスクリ-ンショットを撮りました" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6u-gM-p0P" customClass="JSQMessagesLabel">
+                        <rect key="frame" x="0.0" y="40" width="375" height="25"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="uZJ-Kg-qft"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cell top label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIR-HK-pqW" userLabel="Cell top label" customClass="JSQMessagesLabel">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="vJc-0O-E72"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="g6u-gM-p0P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MU4-Pb-6EY"/>
+                <constraint firstAttribute="trailing" secondItem="g6u-gM-p0P" secondAttribute="trailing" id="ZBZ-kh-Ygr"/>
+                <constraint firstAttribute="trailing" secondItem="sIR-HK-pqW" secondAttribute="trailing" id="ctX-wQ-KdQ"/>
+                <constraint firstItem="g6u-gM-p0P" firstAttribute="top" secondItem="sIR-HK-pqW" secondAttribute="bottom" constant="20" id="dqe-39-KLg"/>
+                <constraint firstItem="sIR-HK-pqW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nb9-5i-vCx"/>
+                <constraint firstItem="sIR-HK-pqW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vgB-xD-VwH"/>
+            </constraints>
+            <connections>
+                <outlet property="cellTopLabel" destination="sIR-HK-pqW" id="G47-uu-RXM"/>
+                <outlet property="cellTopLabelHeightConstraint" destination="vJc-0O-E72" id="8XT-Ti-8Ze"/>
+                <outlet property="dateBottomSpace" destination="dqe-39-KLg" id="bL3-wo-vzy"/>
+                <outlet property="reportText" destination="g6u-gM-p0P" id="FUt-5G-CWa"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

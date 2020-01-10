@@ -1,0 +1,24 @@
+
+/* Class = "UITextField"; placeholder = "パスワード"; ObjectID = "0xB-QA-OOR"; */
+"0xB-QA-OOR.placeholder" = "パスワード";
+
+/* Class = "UITextField"; placeholder = "検索"; ObjectID = "PEc-Je-6IC"; */
+"PEc-Je-6IC.placeholder" = "検索";
+
+/* Class = "UITabBarItem"; title = "ホーム"; ObjectID = "XhW-I4-Ctk"; */
+"XhW-I4-Ctk.title" = "ホーム";
+
+/* Class = "UILabel"; text = "SampleApplicaionX"; ObjectID = "cnU-b6-oYr"; */
+"cnU-b6-oYr.text" = "SampleApplicaionX";
+
+/* Class = "UILabel"; text = "ログイン"; ObjectID = "ieH-PE-NJL"; */
+"ieH-PE-NJL.text" = "ログイン";
+
+/* Class = "UITextField"; placeholder = "メールアドレス"; ObjectID = "j5d-Vm-Wq6"; */
+"j5d-Vm-Wq6.placeholder" = "メールアドレス";
+
+/* Class = "UILabel"; text = "SampleApplicaionX"; ObjectID = "jRB-lw-mrr"; */
+"jRB-lw-mrr.text" = "SampleApplicaionX";
+
+/* Class = "UITabBarItem"; title = "検索"; ObjectID = "rrA-tV-PaA"; */
+"rrA-tV-PaA.title" = "検索";
